@@ -6,6 +6,7 @@ import { getSortedPostsData } from '../lib/posts';
 
 import Link from 'next/link';
 import Date from '../components/Date';
+import Marquee from '../components/Marquee';
 
 export default function Home({ allPostsData }) {
   return (
@@ -15,6 +16,8 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>Hello, I am Humberto. A  Front End developer that may you contact in Spanish / English / Portuguese on <a href="https://www.linkedin.com/in/humberto-asca-aguirre-esp?form=MY01SV&OCID=MY01SV" target="_blank" rel="author">LinkedIn</a></p>
+
+        <Marquee/>
         <p>
           (This is a sample website - you’ll be building a site like this on{' '}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
